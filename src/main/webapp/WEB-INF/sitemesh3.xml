@@ -1,0 +1,9 @@
+<sitemesh>
+    <!-- Admin dùng decorator riêng, còn lại dùng decorator User -->
+    <mapping path="/admin/*" decorator="/WEB-INF/decorators/admin.jsp"/>
+    <mapping path="/*" decorator="/WEB-INF/decorators/user.jsp"/>
+
+    <mapping path="/images/*" exclude="true"/>
+    <mapping path="/css/*" exclude="true"/>
+    <mapping path="/js/*" exclude="true"/>
+</sitemesh>
